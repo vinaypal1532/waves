@@ -1,0 +1,14 @@
+# 
+
+user and order table
+
+select* form user u left join 
+order o on u.id=order.user_id 
+
+#
+select u.id,u.name,u.email,u.mobile,o.amount.u.user_id,  COUNT(o.id) AS order_count
+from users u left join order o on u.id=o.user_id 
+group by u.id,u.name,u.mobile  having count(o.id)>10;
+
+# 
+select salary from user order by salary  desc limit 1 offset 2
