@@ -7,6 +7,7 @@ use App\Http\Controllers\Api\QuestionApiController;
 use App\Http\Controllers\Api\JobApiController;
 use App\Http\Controllers\Api\ProfileController;
 use App\Http\Controllers\Api\BatchapiController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
