@@ -33,7 +33,6 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::get('api_logout', [UserAuthController::class,'logout']);
 });
 
-
 Route::get('api_domain', [QuestionApiController::class,'get_domain']);
 Route::get('api_topic/{id}', [QuestionApiController::class,'get_topic']);
 Route::get('api_question/{id}', [QuestionApiController::class,'get_question']);
