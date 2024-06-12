@@ -22,7 +22,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-
 Route::get('test_balance',[UserAuthController::class,'test_balance']);
 Route::post('api_register', [UserAuthController::class, 'register']);
 Route::post('api_login', [UserAuthController::class, 'login']);
